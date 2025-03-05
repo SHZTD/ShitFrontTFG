@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo</title>
+</head>
+<body>
+    <h2>Insert database</h2>
+
+    <form id="insertForm" action="#" method="POST">
+        <label for="estado">Estado actual:</label><br>
+        <select id="estado" name="estado" required>
+            <option value="" disabled selected>Selecciona un estado</option>
+            <option value="COMPLETADO">COMPLETADO</option>
+            <option value="PENDIENTE">PENDIENTE</option>
+            <option value="EN_PROGRESO">EN PROGRESO</option>
+        </select><br><br>
+
+        <input type="submit" value="Insertar en base de datos"/>
+    </form>
+
+    <script src="toDatabase.js"></script>
+</body>
+</html>
